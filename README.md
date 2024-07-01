@@ -7,7 +7,7 @@
 
 Инструкция:
 В командной строке прописать данные команды:
-1) git clone https://github.com/InDenzel/shkotin_test_task (создается локальная копия проекта из репозитория github)
-2) cd shkotin_test_task (перейти в папку с проектом)
+1) git clone https://github.com/InDenzel/shkotin_test (создается локальная копия проекта из репозитория github)
+2) cd shkotin_test (перейти в папку с проектом)
 3) docker-compose up -d (создаются и запускаются образы с контейнером с помощью файла docker-compose.yml)
 4) Перейти в браузер и ввести http://localhost:8000/
