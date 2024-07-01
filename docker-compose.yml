@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  falcon:
+    build: .
+    container_name: falcon
+    command: python main.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - postgresql
+
+  postgresql:
+    image: postgres
+    environment:
+      - POSTGRES_DB=MYDB
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123
+    container_name: postgresql
